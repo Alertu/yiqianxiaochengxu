@@ -1,0 +1,31 @@
+/* pages/activity-can/activity-can.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.page{
+    margin: 20rpx 30rpx;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.div-jp{
+ float: left;
+ margin:  10px 30rpx;
+}
+.div-js{
+  color: #666;
+  font-size: 28rpx;
+  line-height: 56rpx;
+}
+.top {
+  width: 120px;/*宽度为高度的2倍*/
+  line-height: 70rpx;
+  border-radius:  50px  0 0 50px ;/*圆角半径为高度的值*/
+  background-color: #3f8cff;
+  margin-top: 60rpx;
+  text-align: center;
+  float: right;
+}
+.tishi{
+  color: #fff;
+  font-size: 32rpx;
+}

@@ -1,0 +1,52 @@
+<view class="pages">
+<view class='tou'>
+<image src="/imgs/tishi.png"></image>
+<view class="p">
+<view>
+ 您可登录易签后台管理发布会议
+ </view>
+ <text>http://admin.51data.com.cn/ (账号密码同步)</text>
+</view>
+</view>
+
+<view class="box">
+<image class="bgimg" src="/imgs/sousuo.png"></image>
+<input placeholder="搜索"></input>
+<!-- <image src=""></image><input placeholder="搜索"></input> -->
+</view>
+<view class="bottom">
+<view class="bot1"  bindtap="gsxx">
+<image class="imga" src="/imgs/gsxx.png"></image>
+<text>公司信息</text>
+<image class="imgb" src="/imgs/jian.png"></image>
+</view>
+<view class="bot1" bindtap="grxx">
+<image class="imga" src="/imgs/grxx.png"></image>
+<text>个人信息</text>
+<image class="imgb" src="/imgs/jian.png"></image>
+</view>
+</view>
+</view>
+
+
+<!-- 内容 -->
+<view class="cen"  wx:for='{{huo}}' wx:key='index'>
+<view class="test"  style=" position: relative;top: 50rpx;left:30rpx;">北京丰台区</view>
+<image  class="imgh" src="{{item.tu}}"></image>
+<view class="text">{{item.nei}}</view>
+<view class="tu">
+    <view class="con">
+        <image src="/imgs/shi.png"></image><span>{{item.shi}}</span>
+    </view>
+    <view class="con">
+        <image src="/imgs/ren.png"  style="width:33rpx;"></image><span>{{item.re}}</span>
+    </view>
+    <view class="con">
+      <span>{{item.ji}}</span>
+    </view>
+       <view class=""></view>
+       <view class=""></view>
+       <view class=""></view>
+</view>
+
+</view>

@@ -1,0 +1,20 @@
+<!--pages/register/register.wxml-->
+<form bindsubmit='formSubmit'>
+<view class='page1 '>
+  <label class='label-class'>手机号</label>
+  <input value='{{sjh}}' name="phone"  bindinput="sjh" class="weui-input input-xian" placeholder="请输入手机号" placeholder-class="psection"/>
+  <label class='label-class'>验证码</label>
+  <view class=''>
+   <input value='{{code}}' name="code" class="weui-input input-xian yanzheng" placeholder="请输入验证码" placeholder-class="psection"/>
+   <button class='yanbtn get-code-btn' disabled='{{disabled}}' data-id="2" bindtap="getVerificationCode" form-type='submit'  >{{time}}</button>
+  </view>
+  <view class='clear'></view>
+  <label class='label-class'>登录密码</label>
+  <input class="weui-input input-xian" password  value='{{dlmm}}' name="password" bindinput="dlmm" placeholder="请输入登录密码" placeholder-class="psection"/>
+  <label class='label-class'>确认密码</label>
+ <input class="weui-input input-xian" password  value='{{qrmm}}' name="repassword"  bindinput="qrmm" placeholder="请输入确认密码" placeholder-class="psection"/>
+
+  <button class='btn'  form-type='submit'>注册</button>
+  <view class='a-lian'><text bindtap='loginup'>登录</text> | <text bindtap='wangji'>忘记密码？</text></view>
+</view>
+</form>

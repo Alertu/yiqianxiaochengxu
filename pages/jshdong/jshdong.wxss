@@ -1,0 +1,45 @@
+/* pages/activity-sign/activity-sign.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.page{
+    margin: 20rpx 30rpx;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 20rpx;
+}
+.flex{
+  display: flex;
+}
+.div-jp{
+  flex: 0 0 70%;
+  margin-left: 30rpx;
+}
+.juzhong{
+  display: flex;
+  justify-content: center;
+}
+.div-img{
+  width:120rpx;height:120rpx;
+}
+.div-js{
+  color: #666;
+  font-size: 28rpx;
+  line-height: 56rpx;
+}
+.top {
+width: 100px;/*宽度为高度的2倍*/
+height: 50px;
+border-radius: 0 0 50px 50px ;/*圆角半径为高度的值*/
+background-color: #ff3f3f;
+margin-left: 30rpx;
+text-align: center;
+}
+.tishi{
+  color: #fff;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
+.div-xm{
+ margin-left: 30rpx; 
+}

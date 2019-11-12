@@ -1,0 +1,7 @@
+<!--pages/operator-check/operator-check.wxml-->
+<view class='page'>
+  <view wx:for='{{info}}' class='label-font'>
+    <label>{{item}}</label>
+  </view>
+  <button class='btn' bindtap='bindcheck'>确认签到</button>
+</view>

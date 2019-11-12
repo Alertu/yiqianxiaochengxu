@@ -1,0 +1,15 @@
+<view  >
+     <image class='bgimg' src='https://yq.51data.com.cn/{{event.img_url}}'></image>
+    <view class='juzhong'>
+      <view style='text-align: center;font-size: 18px;margin-top:20px;'>{{event.title}}</view>
+   </view>
+   <view class='juzhong'>
+     <view style='text-align: center;margin-top: 5px; font-size: 12px;color:#999;'>请妥善保管二维码，参加会议时请出示该二维码!</view>
+   </view>
+   <view class='juzhong'>
+     <image class='img' src='https://yq.51data.com.cn/{{img}}'></image>
+   </view>
+   <view  style='text-align: center;margin-top: 20rpx;' bindtap='shouye'>返回个人中心</view>
+</view>
+
+

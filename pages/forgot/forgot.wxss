@@ -1,0 +1,13 @@
+/* pages/forgot/forgot.wxss */
+.yanzheng{
+  width: 58%;
+  float: left;
+}
+.yanbtn{
+  width: 40%;
+  float: right;
+  margin-top:0rpx; 
+  color: #888 ;
+  font-size: 32rpx;
+  background: #e6e6e6;
+}

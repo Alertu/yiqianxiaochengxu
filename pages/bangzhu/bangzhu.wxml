@@ -1,0 +1,4 @@
+<!--pages/bangzhu/bangzhu.wxml-->
+<view class="rich-text-wrp">
+  <rich-text  nodes="{{content}}" bindtap="tap"></rich-text>
+</view>

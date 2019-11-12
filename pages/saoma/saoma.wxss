@@ -1,0 +1,89 @@
+/* pages/saomao/saoma.wxss */
+/* pages/operator-look/operator-look.wxss */
+page{
+   background-color: #f3f3f3; 
+   margin-bottom: 160rpx;
+   width: 100%;
+   font-size: 28rpx;
+   line-height: 80rpx;
+   color: #444;
+}
+
+.page{
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  width: 92%;
+}
+.box-sy{
+  width: 8rpx;
+  height: 30rpx;
+  background: #3f8cff;
+  border-radius: 5px;
+  margin-right: 12rpx;
+
+}
+.weui-cell1{
+  margin: 5rpx 30rpx;
+}
+.title{
+   color: #000;
+  line-height: 80rpx;
+  font-size: 36rpx;
+}
+.div-xm{
+  font-size: 34rpx;
+  color: #333;
+} 
+.div-jp2{
+  padding: 20rpx 30rpx;
+  line-height: 56rpx;
+}
+.mini-btn{
+  font-size:26rpx;
+  color: #999; 
+  background-color: #fff;
+  border: solid 1px #999;
+  border-radius: 30px;
+}
+.btn-sm{
+  border: solid 1px #3f8cff;
+  border-radius: 30px;
+  color: #3f8cff; 
+  background-color: #fff;
+  margin: 20rpx 200rpx;
+}
+
+
+.table {
+  border: 0px solid darkgray;
+  margin-top: 10px;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  line-height: 20px;
+  align-items: center;
+}
+.td {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 50%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  line-height: 40px;
+  align-items: center;
+}

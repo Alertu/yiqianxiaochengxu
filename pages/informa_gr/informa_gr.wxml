@@ -1,0 +1,56 @@
+
+
+
+<!--pages/informa_gr/informa_gr.wxml-->
+<view class='pages'   >
+ <form bindsubmit="formSubmit">
+   <view class="weui-cell1 weui-cell_input"  style='margin-top:20rpx;'>
+        <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name='name' placeholder="未设置"/>
+            
+        </view>
+          <image src="/imgs/jian.png" class="imgc"></image> 
+
+    </view>
+    <view class="weui-cell1  weui-cell_input ">
+        <view class="weui-cell__hd">
+            <view class="weui-label">所属部门</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name='department' placeholder="未设置"/>
+        </view>
+             <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">您的职位</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name='position' placeholder="未设置"/>
+        </view>
+             <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-cell1 weui-cell_input"  style='  border-bottom: 1px solid #fff;'>
+        <view class="weui-cell__hd">
+            <view class="weui-label">您的邮箱</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name='email' placeholder="未设置"/>
+        </view>
+             <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <button class='btn' form-type='submit'>提交</button>
+ </form>
+</view>
+       
+
+
+
+
+
+
+
+

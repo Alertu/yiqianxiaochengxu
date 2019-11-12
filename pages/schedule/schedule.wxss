@@ -1,0 +1,39 @@
+/* pages/schedule/schedule.wxss */
+page{
+   background-color: #f3f3f3; 
+}
+.page{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10rpx 0;
+  margin-top: 30rpx;
+}
+.input-ju{
+  margin-left:40rpx; 
+}
+.btn{
+  margin-left:30rpx;
+  margin-right:30rpx;
+}
+
+.yuan2{
+  border:6rpx solid #3f8cff;
+  background-color: #fff;
+  width:16rpx;
+  height:16rpx;
+  border-radius: 50%;
+   margin-left: 10rpx;
+  margin-top: 21rpx;
+  margin-right: 10rpx;
+  float: left;
+}
+.psection{
+  /* placeholder颜色  */
+  color: #b4b4b4;
+  /* placeholder字体大小  */
+  font-size: 28rpx;
+}
+.input-box{
+   float: right;
+}
+

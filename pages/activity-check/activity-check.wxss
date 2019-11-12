@@ -1,0 +1,65 @@
+/* pages/activity-check/activity-check.wxss */
+page,
+.page,
+.page__bd{
+    margin:0;
+    background-color: #f3f3f3;
+   font-size: 12px;
+}
+.weui-navbar__item.weui-bar__item_on {
+  color:#000; 
+}
+.weui-navbar__slider {
+  background-color:#3f8cff;
+}
+.weui-navbar__item{
+  color:#999;
+  background-color: #fff;
+}
+.weui-navbar__title,.div-xm{
+   font-size: 34rpx;
+}
+.page{
+    margin: 20rpx 30rpx;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.div-jp2{
+  padding: 20rpx 30rpx;
+}
+.div-js{
+  color: #666;
+  font-size: 28rpx;
+  line-height: 56rpx;
+}
+.table {
+  border: 0px solid darkgray;
+  margin-top: 10px;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  line-height: 20px;
+  align-items: center;
+}
+.td {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  line-height: 40px;
+  align-items: center;
+}

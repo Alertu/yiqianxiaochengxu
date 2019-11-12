@@ -1,0 +1,42 @@
+/* pages/guest/guest.wxss */
+page{
+   background-color: #f3f3f3; 
+   margin-bottom: 160rpx;
+   width: 100%;
+}
+.update{
+  height: 350rpx;
+  padding: 40rpx;
+}
+.page{
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 30rpx;
+  width: 92%;
+  padding-bottom: 30rpx;
+}
+.box-sy{
+  width: 8rpx;
+  height: 30rpx;
+  background: #3f8cff;
+  border-radius: 5px;
+  margin-right: 12rpx;
+}
+.weui-cell1{
+  margin: 5rpx 30rpx;
+}
+.title{
+  line-height: 80rpx;
+}
+.label{
+  margin: 20rpx 30rpx;
+}
+.weui-textarea1 {
+   margin: 20rpx 30rpx;
+   padding: 20rpx;
+   height: 4.3em;
+   border: double 1rpx #e6e6e6;
+   width: 85%;
+}
+/*.kind-list__item-bd{height:0;overflow:hidden}
+.kind-list__item-bd_show{height:auto}*/

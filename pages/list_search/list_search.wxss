@@ -1,0 +1,50 @@
+/* pages/list/list.wxss */
+page{
+  background-color: #f3f3f3;
+  font-size: 16px;
+  width: 100%;
+}
+.page{
+    margin: 20rpx 30rpx;
+    background-color: #fff;
+    border-radius: 10px; 
+    padding-bottom:10px;
+}
+.div-jp{
+ margin:  10px;
+}
+.div-js{
+  color: #666;
+  font-size: 14px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+}
+/*.div-js .view{
+  flex: 0 0 50%;
+}*/
+.juzhong{
+   display: flex;
+  align-items:center;
+}
+.div-js image{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.tishi{
+  color: #fff;
+  font-size: 32rpx;
+}
+.banner{
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.text{
+  width: 280rpx;
+  overflow:hidden; /*超出一行文字自动隐藏*/
+  text-overflow:ellipsis;/*文字隐藏后添加省略号*/
+  white-space:nowrap; /*强制不换行*/
+}

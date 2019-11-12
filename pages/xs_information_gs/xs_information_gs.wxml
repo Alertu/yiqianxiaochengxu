@@ -1,0 +1,65 @@
+<!--pages/xs_information_gs/xs_information_gs.wxml-->
+<view class='pages'>
+
+    <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">公司名称</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="weui-input"> {{company.name}}</view> 
+        </view>
+        <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+  
+    <view class="weui-cell1  weui-cell_input ">
+        <view class="weui-cell__hd">
+            <view class="weui-label">行业</view>
+        </view>
+        <view class="weui-cell__bd">
+           <view  class="weui-input">{{company.industry}}</view>  
+        </view>
+        <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+ 
+    <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">公司地址</view>
+        </view>
+        <view class="weui-cell__bd">
+             <view  class="weui-input">{{company.province}}-{{company.city}}-{{company.district}}</view>  
+        </view>
+        <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">详细地址</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view  class="weui-input">{{company.Address}}</view>
+        </view>
+        <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+     <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">公司电话</view>
+        </view>
+        <view class="weui-cell__bd">
+          <view  class="weui-input">{{company.phone}}</view>
+        </view>
+        <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+     <view class="weui-cell1 weui-cell_input" >
+        <view class="weui-cell__hd">
+            <view class="weui-label">公司邮箱</view>
+        </view>
+        <view class="weui-cell__bd">
+          <view  class="weui-input">{{company.emile}}</view>
+        </view>
+        <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-label label ">营业执照</view>
+    <image src="https://yq.51data.com.cn/{{company.img_url}}" mode='widthFix' class='update'></image>
+    <view style='color:red;font-size:28rpx;margin: 10px 15px;'>*{{tishi}}</view>
+  <view style='color:red;font-size:28rpx;margin: 10px 15px;padding-bottom:30rpx;'>*后台工作人员联系电话：010-82563371</view>
+</view>
+<!-- <button class='btn' bindtap='xiugai'>修改</button> -->

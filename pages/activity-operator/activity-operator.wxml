@@ -1,0 +1,24 @@
+<!--pages/activity-operator/activity-operator.wxml-->
+<view class='page'>
+  <block wx:for="{{event}}">
+    <view class='div-jp Grid'>
+        <block wx:for="{{item.wechat}}" wx:for-item='key'>
+           <image src='{{key.headimgurl}}' class='div-img u-1of1 ' ></image>
+        </block> 
+        <view class='Grid-cell u-1of2'>
+            <view class='div-xm'>{{item.name}}</view>
+            <view class='div-js'>{{item.phone}}</view>
+            <view class='div-js'>{{item.location}}</view>
+        </view>
+        <view class=' u-1of3'>
+        <button class="weui-btn mini-btn"  bindtap='binddelete'data-operatorid='{{item.id}}'>删除</button>
+        </view>
+    </view>
+  </block>  
+  <view class='bottom-div'>
+ 
+   <button open-type='share'>  <image src="/imgs/tianjia.png"></image></button> 
+  </view>
+</view>
+
+

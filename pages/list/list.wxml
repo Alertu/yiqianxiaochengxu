@@ -1,0 +1,62 @@
+
+
+<!-- 头部 -->
+<view class="tou">
+    <view  class="dao">全部地区 
+    <image src="/imgs/xiala.png "></image>
+    </view>
+    <view  class="dao">全部行业
+    <image src="/imgs/xiala.png "></image>
+    </view>
+    <view  class="dao">综合排名
+    <image src="/imgs/xiala.png "></image>
+    </view>
+</view>
+
+<view class="weui-search-bar" style="background-color:#fff;">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+        </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}"  bindtap="hideInput">取消</view>
+</view>
+
+<!-- 内容 -->
+<view class='page' wx:for="{{event}}" wx:for-item="item">
+<navigator url="../activity-detail2/activity-detail?eventid={{item.id}}&type=detail" hover-class="none">
+<view class="dizhi"  style=" position: relative;top: 50rpx;">{{item.Address}}</view>
+  <image class='banner  ' mode='widthFix' src='https://yq.51data.com.cn/{{item.img_url}}'></image>
+
+  <view class='div-jp' >
+    <view >{{item.title}}</view>
+    <view>
+
+    </view>
+        <view class='div-js'>
+     <view class='juzhong ' >
+         <image src='/imgs/shi.png' ></image><span style='white-space:nowrap;margin-right:10px;'>{{item.Start_time}}</span>
+     </view> 
+     <!-- <view class='juzhong '>
+          <image src='/imgs/ren.png' style='width:30rpx;'> </image><span >{{item.size}}</span>
+     </view> 
+        <view class='juzhong '>
+          <span >已结束</span>
+     </view>  -->
+    </view>
+  </view>
+  <!-- <view class='top'><label class='tishi'>我要报名</label></view> -->
+ </navigator>
+ <view class='bot'></view>
+</view>
+
+
+

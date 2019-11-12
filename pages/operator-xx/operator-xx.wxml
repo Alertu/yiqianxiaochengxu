@@ -1,0 +1,51 @@
+<!--pages/operator-xx/operator-xx.wxml-->
+
+<view class='page'>
+ <form bindsubmit='formSumbit'>
+ <view class="zong">
+    <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name='name' placeholder="请输入姓名"/>
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-cell1  weui-cell_input ">
+        <view class="weui-cell__hd">
+            <view class="weui-label">手机号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name='phone' placeholder="请输入手机号"/>
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+
+    <view class="weui-cell1 weui-cell_input" style=" border-bottom: 1px solid #fff;">
+        <view class="weui-cell__hd">
+            <view class="weui-label">操作地点</view>
+        </view>
+   
+       <view class="weui-cell__bd" >
+           <picker bindchange="bindAccountChange" value="{{accountIndex}}" name='location' range-key='local' range="{{accounts}}" >
+                <view class="weui-input">{{accounts[accountIndex]['local']}}</view> 
+            </picker>
+  
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    </view>
+    <button class='btn' form-type='submit'>完成</button>
+  </form>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="微信授权" confirm-text="" cancel-text="" bindcancel="cancel" bindconfirm="confirm">
+ <button wx:if='{{canIUse}}' open-type="getUserInfo" bindgetuserinfo="getUserInfo" id='weixin'  bindtap="toasts"> 
+ <image class='tu' src='../images/weixin4.png' style='width:20px;height:17px;'></image>微信快捷登录 </button>
+   <block wx:else>
+     <label>请更新微信版本</label>
+    </block>
+</modal>       
+
+

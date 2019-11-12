@@ -1,0 +1,80 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/zhu/zhu",
+    "pages/ceshi/ceshi",
+     "pages/jshdong/jshdong",
+    "pages/yong/yong",
+    "pages/activity-can/activity-can",
+    "pages/activity/activity",
+    "pages/operator-apply/operator-apply",
+    "pages/operator-look/operator-look",
+    "pages/operator-xx/operator-xx",
+    "pages/activity-check/activity-check",
+    "pages/activity-sign/activity-sign",
+    "pages/activity-operator/activity-operator",
+    "pages/activity-has/activity-has",
+    "pages/activity-detail/activity-detail",
+    "pages/activity-detail2/activity-detail",
+    "pages/select-sign/select-sign",
+    "pages/xg_information_gs/xg_information_gs",
+    "pages/guest/guest",
+    "pages/test/test",
+    "pages/release/release",
+    "pages/schedule/schedule",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/forgot/forgot",
+    "pages/informa_gr/informa_gr",
+    "pages/register/register",
+    "pages/information_gs/information_gs",
+    "pages/list/list",
+    "pages/dynamic/dynamic",
+    "pages/authorize/authorize",
+    "pages/baoming/baoming",
+    "pages/qrcode/qrcode",
+    "pages/saoma/saoma",
+    "pages/operator-check/operator-check",
+    "pages/operator-sign-activity/operator-sign-activity",
+    "pages/xs_information_gs/xs_information_gs",
+    "pages/xs_informa_gr/xs_informa_gr",
+    "pages/list_search/list_search",
+    "pages/bangzhu/bangzhu",
+    "pages/xin/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "color": "#99999c",
+    "selectedColor": "#7651f6",
+    "backgroundColor": "#ffffff",
+   
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "img/gcx.png",
+        "selectedIconPath": "img/gcsx.png",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/zhu/zhu",
+        "iconPath": "img/zhx.png",
+        "selectedIconPath": "img/zhux.png",
+        "text": "主办方"
+      },
+      {
+              "pagePath": "pages/user/user",
+              "iconPath": "img/wox.png",
+              "selectedIconPath": "img/wosx.png",
+              "text": "我的"
+            }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

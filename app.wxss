@@ -1,0 +1,132 @@
+/**app.wxss**/
+@import 'weui.wxss';
+/*清除浮动*/
+.clear{
+  clear:both;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*文本框样式*/
+.input-xian {
+  border-bottom:solid 1px #e6e6e6  ;
+  margin-bottom:16rpx;
+ 
+}
+.psection{
+  /* placeholder颜色  */
+  color: #b4b4b4;
+  /* placeholder字体大小  */
+  font-size: 32rpx;
+}
+/*label样式*/
+.label-class{
+  color: #333;
+  font-size: 30rpx;
+}
+/*内容与手机的边距*/
+.page{
+  margin: 0 30rpx ;
+}
+.page1{
+  margin: 80rpx 75rpx 0 75rpx;
+}
+/*通用按钮样式*/
+/* .aa{
+    position:fixed; 
+    bottom:3%;
+    width: 92%;
+    background: #ffffff;
+    z-index: 9999;
+    margin-top: 80rpx;
+    border-radius:30px;
+} */
+.btn{
+  color: #fff;
+  width: 92%;
+  border-radius:30px;
+  margin-top: 80rpx;
+  background: #3f8cff;
+  margin-bottom: 60rpx;
+}
+/*.btn1{
+  color: #fff;
+  width: 80%;
+  border-radius:30px;
+  margin-top: 80rpx;
+  background: #3f8cff;
+  position:fixed; bottom:10px;
+}*/
+.btn2{
+  color: #fff;
+  width: 80%;
+  border-radius:30px;
+  margin-top: 80rpx;
+  background: #3f8cff;
+  margin-bottom: 60rpx;
+}
+button::after{
+    border:none;
+}
+
+/*设置提交按钮下跳转链接的样式*/
+.a-lian{
+  text-align: center;
+  margin-top: 40rpx;
+  font-size: 28rpx;
+  color: #3f8cff;
+}
+/*重写weui的weui-cell样式*/
+.weui-cell1 {
+    border-bottom: double 1rpx #e6e6e6;
+    border-top: none;
+    margin:10px 15px;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+    
+}
+/*清楚浮动*/
+.test::after{display: block;height: 0;clear: both;content: ''}
+/*搜索框样式*/
+.weui-search-bar__cancel-btn{
+    margin-top: 0;
+    font-size: 14px;
+    color: #3f8cff;
+}
+.weui-search-bar{
+ background-color:#f3f3f3;
+ border:none;
+ margin-top: 20rpx;
+}
+.weui-search-bar__label {
+border-radius:30px;
+text-align:center;
+color:#9b9b9b;
+background:#f9f7fa;
+line-height:28px;
+}
+.weui-search-bar__form {
+  border-radius:30px;
+  background:#f9f7fa;
+  border:none;
+}
+
+/*rich-text的样式*/
+.rich-text-wrp{
+  margin-bottom: 40px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

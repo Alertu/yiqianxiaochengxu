@@ -1,0 +1,38 @@
+<!--pages/guest/guest.wxml-->
+<form bindsubmit='formSubmit'>
+<view class='page'>
+        <view   class='weui-cell1 title ' bindtap="kindToggle">
+            <view class='box-sy'></view>  
+            嘉宾
+        </view>
+        <view class="kind-list__item-bd ">
+          <view class="weui-cell1 weui-cell_input label-class">
+              <view class="weui-cell__hd">
+                  <view class="weui-label">嘉宾名称</view>
+              </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name='name' placeholder="请输入嘉宾名称"/>
+              </view>
+          </view>
+          <view class="weui-cell1 weui-cell_input label-class">
+              <view class="weui-cell__hd">
+                  <view class="weui-label">嘉宾称谓</view>
+              </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" name='appellation' placeholder="请输入嘉宾称谓"/>
+              </view>
+          </view>
+          <view class="weui-label label label-class">嘉宾照片
+          </view>
+          <view class='weui-cell1' bindtap="chooseImage"><image src="{{files}}" class='update'></image></view>       
+  
+          <view class="weui-label label label-class">嘉宾介绍</view>
+          <textarea class="weui-textarea1 " placeholder-class='psection' name='Introduction' placeholder="请输入嘉宾介绍" maxlength='-1'/>
+        <view class="weui-textarea-counter"></view>
+      </view>
+  </view>
+  <button class='btn' form-type='submit'>下一步</button>
+
+
+</form>
+  

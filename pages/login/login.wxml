@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit='formSubmit'>
+<view class='page1 '>
+  <label class='label-class'>手机号</label>
+  <input class="weui-input input-xian"   value='{{phone}}' name="phone" placeholder="请输入手机号" placeholder-class="psection"/>
+  <label  class='label-class'>密码</label>
+  <input password class="weui-input input-xian" value='{{password}}' name="password" placeholder="请输入密码" placeholder-class="psection"/>
+  <view class='a-lian'><text bindtap='zhuce'>注册成为会员</text> | <text bindtap='wangji'>忘记密码？</text></view>
+  <button class='btn'  form-type='submit'>登录</button>
+</view>
+</form>
+ 

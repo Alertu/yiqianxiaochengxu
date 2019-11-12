@@ -1,0 +1,4 @@
+/* pages/baoming/baoming.wxs. */
+.radio-group{
+  margin-bottom: 10px;
+}

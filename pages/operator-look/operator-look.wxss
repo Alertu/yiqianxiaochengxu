@@ -1,0 +1,74 @@
+/* pages/operator-look/operator-look.wxss */
+page{
+   background-color: #f3f3f3; 
+   margin-bottom: 160rpx;
+   width: 100%;
+   font-size: 28rpx;
+   line-height: 80rpx;
+   color: #444;
+}
+.weui-label {
+  width:75px;
+}
+.page{
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  width: 92%;
+}
+.box-sy{
+  width: 8rpx;
+  height: 30rpx;
+  background: #3f8cff;
+  border-radius: 5px;
+  margin-right: 12rpx;
+
+}
+.weui-cell1{
+  margin: 5rpx 30rpx;
+}
+.title{
+   color: #000;
+  line-height: 80rpx;
+  font-size: 36rpx;
+}
+.div-xm{
+  font-size: 34rpx;
+  color: #333;
+} 
+.div-jp2{
+  padding: 20rpx 30rpx;
+  line-height: 56rpx;
+}
+.Grid {
+  display: flex;
+  width: 100%;
+}
+.u-1of3{
+  display: flex;
+  align-items: center;
+}
+.u-1of2 {
+  flex: 0 0 60%;
+}
+.weui-input{
+  flex: 0 0 90%;
+}
+.mini-btn{
+  font-size:10px;
+  color: #999; 
+  background-color: #fff;
+  border: solid 1px #999;
+  border-radius: 30px;
+}
+.btn-sm{
+  border: solid 1px #3f8cff;
+  border-radius: 30px;
+  color: #3f8cff; 
+  background-color: #fff;
+
+}
+form{
+  width: 100%;
+}

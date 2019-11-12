@@ -1,0 +1,9 @@
+<view class='cen'>
+ <image src="/imgs/xiala.png "></image>
+ <view class="cena">
+<view class="cens">我的</view>
+<view class="censa">cddddddddd</view>
+ </view>
+</view>
+
+<button bindtap="zhifu">cdce</button>

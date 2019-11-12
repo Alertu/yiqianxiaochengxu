@@ -1,0 +1,57 @@
+<!--pages/user/user.wxml-->
+<view class='nev test' id='imm'>
+
+<image src="/imgs/wo.png" class='imga'></image>
+  <image src="{{userInfo.avatarUrl}}" style='width:181rpx;height:181rpx;border-radius:50px;position: relative;top: -245rpx; box-shadow: 0 0 10px rgba(91,117,251,0.5);'></image>
+  <view class='user'><text class='info2'>{{userInfo.nickName}}</text></view>
+
+</view>
+
+
+
+<!-- 内容 -->
+<view class='pages'>
+<!-- 可报名 -->
+  <view class='box'  bindtap='bindActivity_can'>
+   <view class="left">
+   <image src="/imgs/ke.png"></image>
+ 
+   可报活动</view>
+   <view class="right">
+      <image src="/imgs/jian.png"></image>
+   </view>
+  </view>
+ <!-- 已报名 -->
+  <view class='box' bindtap='bindActivity_hascv'>
+ 
+   <view class="left"  >
+    <image src="/imgs/yi.png"></image>
+   已报活动</view>
+   <view class="right">
+      <image src="/imgs/jian.png"></image>
+   </view>
+  </view>
+  <!-- 已结束 -->
+   <view class='box1'    bindtap='bindActivity_jsh'>
+  
+   <view class="left">
+    <image src="/imgs/yibao.png"></image>
+   已结束活动</view>
+   <view class="right">
+      <image src="/imgs/jian.png"></image>
+   </view>
+  </view>
+
+
+</view> 
+
+<modal hidden="{{hiddenmodalput}}" title="微信授权" confirm-text="" cancel-text="" bindcancel="cancel" bindconfirm="confirm">
+ <button wx:if='{{canIUse}}' open-type="getUserInfo" bindgetuserinfo="getUserInfo" id='weixin'  bindtap="toasts"> 
+ <view class='juzhong1'><image class='tu' src='../../img/weixin.jpg' style='width:30px;height:25px;'></image>微信快捷登录</view>
+  </button>
+   <block wx:else>
+     <label>请更新微信版本</label>
+    </block>
+</modal>
+                                                                                                               
+

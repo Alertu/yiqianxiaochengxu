@@ -1,0 +1,181 @@
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3; 
+  
+}
+.pages{
+  width: 750rpx;
+  height: 350rpx;
+  background-color: #fff;
+}
+.tou{
+
+  width: 750rpx;
+  height: 70rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #f3f3f3;
+padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  border-top: 1px solid #f3f3f3;
+
+}
+.box input{
+  font-size: 28rpx;
+  width: 92%;
+
+}
+.top image{
+  float: left;
+padding-left: 30rpx;
+
+}
+
+.imgf{
+  width: 690rpx;
+  height: 300rpx;
+
+}
+.test{
+  color: #fff;
+  font-size: 22rpx;
+ 
+  background-color:rgba(117, 135, 195, 0.8);
+  width: 30%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+
+  
+}
+.tou .p{
+  color: #ff0000;
+  font-size: 16rpx;
+  float: right;
+  width: 90%;
+  margin-top: 16rpx;
+}
+.tou text{
+  color: #ff0000;
+  font-size: 16rpx;
+  font-weight: bold;
+}
+.tou image{
+  width: 24rpx;
+  height: 20rpx;
+  margin-left:30rpx;
+  position: relative;
+  top: 5rpx;
+}
+.box{
+  
+  width: 690rpx;
+  height: 70rpx;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  margin-top: 35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom{
+  width: 690rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+margin-left: 30rpx;
+margin-top: 20rpx;
+
+}
+.bot1{
+  width: 330rpx;
+  height: 108rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 28rpx;
+  background-color: #fff;
+ border-radius: 15rpx;
+ box-shadow: 0 0 10px rgba(243,243,243,0.8);
+  
+}
+.imga{
+  width: 72rpx;
+  height: 72rpx;
+   padding-left: 40rpx;
+   margin-top: 8rpx;
+
+}
+.imgb{
+  width: 14rpx;
+  height: 18rpx;
+padding-right: 35rpx;
+}
+.cen{
+  width: 750rpx;
+margin-top: 20rpx;
+  background-color: #fff;
+  padding-bottom: 50rpx;
+  
+}
+.imgh{
+  width: 690rpx;
+  height: 300rpx;
+padding-left: 30rpx;
+
+}
+ .text{
+  color: #000;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  line-height: 43rpx;
+  letter-spacing: 5rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.bgimg{
+  width: 27rpx;
+  height: 26rpx;
+  padding-left: 15rpx;
+}
+.tu{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  margin-left: 15rpx;
+}
+.con{
+  width: auto;
+  height: 50rpx;
+  background-color: #f3f3f3;
+  line-height: 50rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  border-radius: 5rpx;
+  padding-top: 3rpx;
+  padding-bottom: 5rpx;
+
+}
+.con image{
+  width: 22rpx;
+  height: 22rpx;
+  padding-right: 7rpx;
+  padding-top: 10rpx;
+
+}
+.con span{
+  font-size: 28rpx;
+  color: #999;
+}
+.bot{
+  width: 750rpx;
+  height: 21rpx;
+  background-color: #f3f3f3;
+  margin-top: 30rpx;
+  margin-left: -29rpx;
+}

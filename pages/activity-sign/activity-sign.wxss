@@ -1,0 +1,31 @@
+/* pages/activity-sign/activity-sign.wxss */
+/* pages/activity-operator/activity-operator.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.page{
+    margin: 20rpx 30rpx;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.div-jp{
+  padding: 20rpx 0rpx;
+  margin: 0 30rpx;
+  border-bottom: double 1rpx #e6e6e6; 
+
+}
+.div-jp2{
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+}
+.div-img{
+  width:150rpx;height:150rpx;
+  border-radius: 50px;
+  margin-right:20rpx; 
+}
+.div-js{
+  color: #666;
+  font-size: 28rpx;
+  line-height: 56rpx;
+}
+

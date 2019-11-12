@@ -1,0 +1,6 @@
+{"navigationBarTitleText": "广场",
+"enablePullDownRefresh": true, 
+"backgroundColor": "#f9f7fa",
+"backgroundTextStyle": "dark",
+"onReachBottomDistance": 50
+}

@@ -1,0 +1,103 @@
+.page{
+  width: 690rpx;
+
+}
+.banner{
+  width: 690rpx;
+  height: 300rpx;
+}
+
+
+
+
+.tou{
+  width: 750rpx;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-right: 53rpx;
+  border-bottom: 1px solid #f3f3f3;
+  border-top: 1px solid #f3f3f3;
+}
+.dao{
+
+  font-size: 28rpx;
+  color: #000; 
+  box-shadow: 0rpx  10rpx  5rpx  -10rpx rgba(243, 243, 243, 0.5);
+}
+.dao image{
+  width: 18rpx;
+  height: 14rpx;
+  padding-left: 10rpx;
+}
+.bjimg{
+  width: 142rpx;
+  height: 41rpx;
+}
+.cen{
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+
+  
+}
+
+.dizhi{
+  color: #fff;
+  font-size: 22rpx;
+ width: 50%;
+  background-color:rgba(117, 135, 195, 0.8);
+
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+
+  
+}
+
+ .div-jp{
+  color: #000;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  line-height: 43rpx;
+  letter-spacing: 5rpx;
+}
+.div-js{
+ width: 690rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30rpx;
+
+}
+.juzhong{
+  width: auto;
+  height: 50rpx;
+  background-color: #f3f3f3;
+  line-height: 50rpx;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  border-radius: 5rpx;
+  padding-top: 6rpx;
+  padding-bottom: 1px;
+
+}
+.juzhong image{
+  width: 24rpx;
+  height: 24rpx;
+  padding-right: 7rpx;
+
+}
+.juzhong span{
+  font-size: 28rpx;
+  color: #999;
+}
+.bot{
+  width: 750rpx;
+  height: 21rpx;
+  background-color: #f3f3f3;
+  margin-top: 30rpx;
+  margin-left: -29rpx;
+}

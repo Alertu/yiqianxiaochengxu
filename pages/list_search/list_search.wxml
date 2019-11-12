@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+
+<view class='page' wx:for="{{event}}" wx:for-item="item">
+<navigator url="../activity-detail2/activity-detail?eventid={{item.id}}&type=detail" hover-class="none">
+  <image class='banner' mode='widthFix' src='https://yq.51data.com.cn/{{item.img_url}}'></image>
+  <view class='div-jp' >
+    <view >{{item.title}}</view>
+    <view>
+    <view class='div-js'>
+     <view class='juzhong ' >
+         <image src='../../img/5931.png' ></image><label style='white-space:nowrap;margin-right:10px;'>{{item.Start_time}}</label>
+     </view> 
+     <view class='juzhong '>
+          <image src='../../img/5940.png'> </image><view  class='text'>{{item.Address}}</view>
+     </view> 
+    </view>
+    </view>
+  </view>
+  <!-- <view class='top'><label class='tishi'>我要报名</label></view>-->
+  </navigator>
+</view>
+
+
+

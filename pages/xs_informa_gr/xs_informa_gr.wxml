@@ -1,0 +1,91 @@
+<!--pages/xs_informa_gr/xs_informa_gr.wxml-->
+<!-- 显示 -->
+<view class='pages' wx:if="{{hidden == true}}">
+  
+    <view class="weui-cell1 weui-cell_input" style='margin-top:20rpx;'>
+        <view class="weui-cell__hd" >
+            <view class="weui-label">姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="weui-input">{{personal.name}}</view> 
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+  
+    <view class="weui-cell1  weui-cell_input ">
+        <view class="weui-cell__hd">
+            <view class="weui-label">所属部门</view>
+        </view>
+        <view class="weui-cell__bd">
+           <view  class="weui-input">{{personal.department}}</view>  
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+ 
+    <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">职位</view>
+        </view>
+        <view class="weui-cell__bd">
+             <view  class="weui-input">{{personal.position}}</view>  
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+       <view class="weui-cell1 weui-cell_input"  style="border-bottom:1px solid #fff;">
+        <view class="weui-cell__hd">
+            <view class="weui-label">邮箱</view>
+        </view>
+        <view class="weui-cell__bd">
+            <view  class="weui-input">{{personal.email}}</view>
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+
+    </view>
+</view>
+
+<!-- 修改 -->
+<button class='btn' hidden='{{hidden==false}}' bindtap='xiugai'>修改</button>
+
+<view class='pages'  wx:if="{{hidden == false}}">
+ <form bindsubmit="formSubmit">
+   <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name='name' placeholder="请输入姓名" value='{{personal.name}}'/>
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-cell1  weui-cell_input ">
+        <view class="weui-cell__hd">
+            <view class="weui-label">所属部门</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name='department' placeholder="请输入所属部门" value='{{personal.department}}'/>
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-cell1 weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">您的职位</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name='position' placeholder="请输入您的职位" value='{{personal.position}}'/>
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <view class="weui-cell1 weui-cell_input"  >
+        <view class="weui-cell__hd">
+            <view class="weui-label">您的邮箱</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name='email' placeholder="请输入您的邮箱" value='{{personal.email}}'/>
+        </view>
+         <image src="/imgs/jian.png" class="imgc"></image> 
+    </view>
+    <input hidden name='UserInformation_id' value='{{personal.id}}'/>
+    
+    <button class='btn' form-type='submit'>提交</button>
+ </form>
+</view>

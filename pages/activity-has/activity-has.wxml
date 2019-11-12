@@ -1,0 +1,119 @@
+<!--pages/activity-has.wxml-->
+
+<view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+        </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}"  bindtap="hideInput">取消</view>
+</view>
+
+<view class='pagex' wx:for="{{event}}" wx:for-item="item"  wx:key="index">   
+  <view class="weui-cell__bd">
+    <navigator url="../activity-detail/activity-detail?eventid={{item.id}}&status={{item.status}}"  hover-class="none">
+ 
+   
+      <view class='tupian'>
+  
+           <view class='utf1'>
+           
+           <view wx:if='{{item.status == 0||item.status == null}}' class='biaoshi'>待审核</view>
+           <view wx:elif='{{item.status == 1}}' class='biaoshi'>审核成功</view>
+           <view wx:elif='{{item.status == 2}}' class='biaoshi'>审核失败</view>
+    
+          <image  mode='widthFix' src='https://yq.51data.com.cn/{{item.img_url}}' ></image>
+        </view>
+
+      </view>  
+              <view class='utf2'>
+        <view class='div-jp' >
+    <view>{{item.title}}</view>
+    </view>
+  
+          <view class='content-font' style="font-weight: bold;">  <image src='/imgs/shijian.png' ></image>{{item.Start_time}}</view>
+          <view class='content-font'>  <image src='/imgs/weizhi.png' style="height:28rpx;" ></image>{{item.Address}}</view>
+          <view class="ren">
+        <view class='content-font1'>  签到{{item.sign_count}}人   </view>
+        <view class='content-font1' style="margin-left:30rpx;">  报名{{item.no_sign_count}}人</view>
+     </view>
+        </view>
+    </navigator>
+  </view>
+  <view  wx:if='{{item.status == 1}}' class='teat fu-div'>
+    <view class='btn-div'>
+      <navigator  url="../activity-detail/activity-detail?eventid={{item.id}}&status={{item.status}}"  hover-class="none">
+           <!-- <button bindtap='check'>统计</button> -->
+        <image src="/imgs/fenxiang.png" ></image>
+       </navigator>
+       
+    <!-- open-type='share' data-id='{{item.id}}' data-title='{{item.title}}' -->
+      <!-- <button  bindtap='getFenxiang' >分享报名</button> -->
+ 
+     
+      <navigator url="../activity-check/activity-check?eventid={{item.id}}"  hover-class="none">
+           <!-- <button bindtap='check'>统计</button> -->
+            <image src="/imgs/tongji.png" bindtap="check"  style="padding-left:20rpx;"></image>
+       </navigator>
+       
+
+    </view>
+  
+
+
+
+      <view class='btn-div'>
+      <navigator url="../activity-operator/activity-operator?eventid={{item.id}}&eventtitle={{item.title}}"  hover-class="none">
+
+           <button bindtap='operator'>添加签到员</button>
+       </navigator>
+    </view>
+  </view>
+
+</view>
+<view style="height:59px;"></view>
+
+<!-- 底部 -->
+
+
+<!-- 信息 -->
+<view class="bottom">
+<!-- 公司 -->
+<view class="bot1"  bindtap="gsxx">
+<text>公司信息</text>
+
+</view>
+<text style="color:#f3f3f3;height:60rpx;">|</text>
+<!-- 个人 -->
+<view class="bot1" bindtap="grxx">
+<text>个人信息</text>
+</view>
+<!-- 活动 -->
+
+<!--index.wxml-->
+<view class="bot2" bindtap="showDialogBtn">添加活动</view>
+
+
+</view>
+<!--弹窗-->
+<view class="modal-mask"  bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">添加活动</view>
+    <image src="/imgs/bei.png" style="width:572rpx;height:164rpx;  position: relative;top: -55rpx;z-index:-99999;" ></image>
+  
+     <view class="modal-tou">您可登录易签后台管理发布会议</view>
+    <view class="modal-dizhi">http://admin.51data.com.cn/ </view>
+    <view class="modal-mi">（账号密码同步）</view>
+   <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel" >取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">复制</view> 
+  </view>
+</view>

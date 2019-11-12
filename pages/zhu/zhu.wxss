@@ -1,0 +1,47 @@
+.bei image{
+  width: 750rpx;
+  height: 606rpx;
+
+}
+.box{
+
+  width: 400rpx;
+  height: 90rpx;
+  border-radius: 40rpx;
+
+  text-align: center;
+
+ margin: 0 auto;
+ margin-top: 80rpx;
+}
+.box image{
+    width: 400rpx;
+  height: 90rpx;
+   border-radius: 40rpx;
+}
+.box span{
+  color: #fff;
+  font-size: 36rpx;
+  position: relative;
+  top: -90rpx;
+}
+.box1{
+  width: 400rpx;
+  height: 90rpx;
+  border-radius: 40rpx;
+
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 47rpx;
+} 
+.box1 image{
+    width: 400rpx;
+  height: 90rpx;
+   border-radius: 40rpx;
+}
+.box1 span{
+  color: #fff;
+  font-size: 36rpx;
+  position: relative;
+  top: -90rpx;
+}

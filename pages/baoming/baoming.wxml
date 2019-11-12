@@ -1,0 +1,26 @@
+<!--pages/baoming/baoming.wxml-->
+<form bindsubmit='formSubmit'>
+<view class='page1'  >
+  <label class='label-class'>姓名<text style='color:red;' >*</text></label>
+  <input name="user_name" class="weui-input input-xian" placeholder="请输入姓名" placeholder-class="psection"/>
+  <label class='label-class'>手机号<text style='color:red;'>*</text></label>
+  <input  name="user_phone" class="weui-input input-xian" type='number' placeholder="请输入手机号" placeholder-class="psection"/>
+ <!--<label class='label-class'>性别</label>
+  <view class='test'>
+    <radio-group class="radio-group" bindchange="radioChange" name='user_sex'>
+      <view style='float:left;' class="radio" wx:for="{{radioItems}}">
+          <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+          <view style='float:left;width:20px;'></view>
+      </view>
+    </radio-group>
+  </view>--> 
+    <input value='{{eventid}}' hidden name="eventid" class="weui-input input-xian"  placeholder-class="psection"/>
+  <block wx:for="{{event}}" wx:for-item="item">
+    <label class='label-class'>{{item.type}}<text style='color:red;' wx:if='{{item.fill==1}}'>*</text></label>
+    <input value='' name="{{item.Field}}" class="weui-input input-xian" placeholder="请输入{{item.type}}" placeholder-class="psection"/>
+    <view class='clear'></view>
+  </block>
+</view>
+<button class='btn2' form-type='submit'>报名</button>
+<!--<view class='a-lian'><text bindtap='loginup'>我也要发布会议</text>  </view>-->
+</form>

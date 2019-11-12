@@ -1,0 +1,52 @@
+<!--pages/activity-sign/activity-sign.wxml-->
+<view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+        </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}"  bindtap="hideInput">取消</view>
+</view>
+
+
+<view class='page test' wx:for="{{event}}" wx:for-item="item" wx:if='{{item.time==3}}' >
+  <navigator url='../activity-detail2/activity-detail?eventid={{item.id}}&type=yi' hover-class='none'>
+    <view class='top' wx:if='{{item.time==1 || item.time==2 || item.time==3}}'>
+    <label class='tishi' wx:if='{{item.time==3}}'>已结束</label>
+    </view>
+    <view class='div-xm'>{{item.title}}</view>
+  </navigator>
+    <view class='flex'>
+      <view class='div-jp'>
+         <navigator url='../activity-detail2/activity-detail?eventid={{item.id}}&type=yi' hover-class='none'>
+          <view class='div-js'>活动开始时间：{{item.activity_start_time}}</view>
+          <view class='div-js'>活动结束时间：{{item.activity_end_time}}</view>
+          <view class='div-js'>活动地址：{{item.Address}}</view>
+        </navigator>
+      </view>
+      
+      <navigator url='../qrcode/qrcode?event_id={{item.id}}' hover-class='none'>
+      <view>
+          <view class='juzhong'>
+            <image src='https://yq.51data.com.cn/{{item.QrCode}}' class='div-img'></image>
+          </view>
+          <view class='juzhong'>
+            <view style='font-size:10px;color:red;'>点击图片</view>
+          </view>
+           <view class='juzhong'>
+            <view style='font-size:10px;color:red;'>查看活动二维码</view>
+          </view>
+      </view>
+      </navigator>  
+    </view>  
+  
+</view>
+

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "已参加的活动",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#f9f7fa",
+  "backgroundTextStyle": "dark"
+}

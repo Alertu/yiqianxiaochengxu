@@ -1,0 +1,22 @@
+<!--pages/schedule/schedule.wxml-->
+<form bindsubmit='formSubmit'>
+  <view class='page'>
+   <view class='yuan2'></view>
+    <label class='label-class' >
+        <picker mode="multiSelector" value="{{startdate}}" bindchange="bindStartChange" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+          <view class="weui-input" >{{starttime}}
+          <input  hidden='flase' name='Start_time' value='{{starttime}}' > </input>
+          </view>
+        </picker>
+    </label>
+    <label class='label-class' >
+        <picker mode="multiSelector" value="{{enddate}}"  bindchange="bindEndChange" bindcolumnchange="changeDateTimeColumn2" range="{{dateTimeArray1}}">
+            <view class="weui-input"> {{endtime}}</view>
+        </picker></label>
+        <input  hidden='flase' name='End_time' value='{{endtime}}' > </input>
+    <input class="weui-input" placeholder-class='psection'  name='content' placeholder="请输入活动日程"/> 
+  </view>
+  <button class='btn' form-type='{{type}}'>下一步</button>
+ </form>
+  
+

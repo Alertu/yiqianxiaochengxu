@@ -1,0 +1,367 @@
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog {
+  width: 572rpx;
+  height: 570rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  margin: -288rpx 90rpx;
+ border-radius: 10rpx;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.modal-title {
+  font-size: 31rpx;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 35rpx;
+  border-bottom: 2px solid #fff;
+  width: 140rpx;
+margin: 0 auto;
+line-height: 50rpx;
+}
+.modal-dizhi{
+  color:#7957f8;
+  font-size: 26rpx;
+  padding-top: 15rpx;
+  text-align: center;
+
+}
+.modal-tou{
+  color:#666;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: -31rpx;
+}
+.modal-mi{
+  color:#666;
+  font-size: 24rpx;
+ padding-top: 8rpx;
+ text-align: center;
+}
+
+
+.modal-footer {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-top: 70rpx;
+}
+.btn-cancel {
+  width: 161rpx;
+  height: 63rpx;
+  line-height: 63rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+  background-color: #999;
+}
+.btn-confirm {
+  width: 161rpx;
+  height: 63rpx;
+  line-height: 63rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+  background-color: #5a77fb;
+}
+
+
+
+
+
+
+page{
+  width: 750rpx;
+  height: 100%;
+  background-color: #f3f3f3; 
+ 
+ }
+
+.pagex{
+    width: 750rpx;
+  height: auto;
+  background-color: #fff;
+ 
+margin-top: 22rpx;
+ 
+}
+.tupian image{
+  width: 690rpx;
+}
+ .div-jp{
+  color: #000;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  line-height: 43rpx;
+  letter-spacing: 5rpx;
+}
+.div-js{
+ width: 690rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30rpx;
+
+}
+.tou{
+
+  width: 750rpx;
+  height: 70rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #f3f3f3;
+padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  border-top: 1px solid #f3f3f3;
+
+
+}
+.box input{
+  font-size: 28rpx;
+  width: 92%;
+
+}
+.top image{
+  float: left;
+padding-left: 30rpx;
+
+}
+
+.imgf{
+  width: 690rpx;
+  height: 300rpx;
+
+}
+
+.tou .p{
+  color: #ff0000;
+  font-size: 16rpx;
+  float: right;
+  width: 90%;
+  margin-top: 16rpx;
+}
+.tou text{
+  color: #ff0000;
+  font-size: 16rpx;
+  font-weight: bold;
+}
+.tou image{
+  width: 24rpx;
+  height: 20rpx;
+  margin-left:30rpx;
+  position: relative;
+  top: 5rpx;
+}
+.box{
+  
+  width: 750rpx;
+  height: 100rpx;
+  background-color: #fff;
+   margin-top: 22rpx;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   
+
+}
+
+.bottom{
+  width: 750rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    height: 108rpx;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: #fff;
+  overflow-x: hidden;
+
+}
+
+.bot1{
+  width: 250rpx;
+  height: 108rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 32rpx;
+  background-color: #fff;
+  /* border-right: 1px solid #f3f3f3; */
+}
+.bot2{
+  width: 250rpx;
+  height: 108rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 32rpx;
+  background-color: #6a5ff7;
+  color: #fff;
+  
+
+}
+.cen{
+  width: 750rpx;
+margin-top: 20rpx;
+  background-color: #fff;
+  padding-bottom: 50rpx;
+  
+}
+.imgh{
+  width: 690rpx;
+  height: 300rpx;
+padding-left: 30rpx;
+
+}
+ .text{
+  color: #000;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  line-height: 43rpx;
+  letter-spacing: 5rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.bgimg{
+  width: 27rpx;
+  height: 26rpx;
+  padding-left: 15rpx;
+}
+.tu{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  margin-left: 15rpx;
+}
+.con{
+  width: auto;
+  height: 50rpx;
+  background-color: #f3f3f3;
+  line-height: 50rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  border-radius: 5rpx;
+  padding-top: 3rpx;
+  padding-bottom: 5rpx;
+
+}
+.con image{
+  width: 22rpx;
+  height: 22rpx;
+  padding-right: 7rpx;
+  padding-top: 10rpx;
+
+}
+.con span{
+  font-size: 28rpx;
+  color: #999;
+}
+.bot{
+  width: 750rpx;
+  height: 21rpx;
+  background-color: #f3f3f3;
+  margin-top: 30rpx;
+  margin-left: -29rpx;
+}
+.ren{
+
+  display: flex;
+  align-items: center;
+ border-bottom: 1px solid #f3f3f3;
+ margin-top: 22rpx;
+ padding-bottom: 22rpx;
+}
+.content-font1{
+  width: 141rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color: #e1e6fe;
+  font-size: 20rpx;
+  color: #5a77fb;
+  text-align: center;
+  font-weight: bold;
+
+ 
+}
+.weui-cell__bd{
+  width: 690rpx;
+  margin-left: 30rpx;
+}
+
+.content-font{
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 22rpx;
+}
+.content-font image{
+  width: 22rpx;
+  height: 22rpx;
+  padding-right: 30rpx;
+}
+.bott::after{display: block;height: 0;clear: both;content: ''}
+.fu-div{
+ width: 690rpx;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-left: 30rpx;
+}
+.btn-div{
+  display: flex;
+  align-items: center;
+}
+.btn-div image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.btn-div button{
+  width: 165rpx;
+  height: 50rpx;
+  margin: 20rpx 5rpx;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #333;
+  border: solid 1px  #5a77fb; 
+  font-size: 20rpx;
+  line-height: 50rpx;
+}
+.biaoshi{
+  color: #fff;
+  font-size: 22rpx;
+  width: 30%;
+  background-color:rgba(117, 135, 195, 0.8);
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  position: relative;
+  top: 50rpx;
+
+}
+
+.tupian image{width:690rpx;  }

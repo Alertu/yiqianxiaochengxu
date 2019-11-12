@@ -1,0 +1,86 @@
+<!--pages/activity/activity-detail.wxml-->
+<view class="page__bd">
+  <image class='banner' mode='widthFix' src='https://yq.51data.com.cn/{{event.img_url}}'></image>
+  <view class='div_di '>
+    <image src='../../img/5931.png'></image>{{event.activity_start_time}}至{{event.activity_end_time}}
+  </view>
+  <view class='div_di' style='margin-bottom: 10px;'>
+    <image src='../../img/5940.png'></image>{{event.province}}-{{event.city}}-{{event.district}}
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>{{event.Address}}
+  </view>
+  <view class="weui-tab">
+
+    <view class="weui-navbar">
+      <block wx:for="{{tabs}}" wx:key="index">
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+          <view class="weui-navbar__title">{{item.content}}</view>
+        </view>
+      </block>
+      <view class="weui-navbar__slider" style="width: {{sliderWidth}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+
+    </view>
+
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" hidden="{{tabs[activeIndex]['id'] != 0}}">
+
+        <view class="rich-text-wrp">
+          <rich-text nodes="{{event.content}}" bindtap="tap"></rich-text>
+        </view>
+      </view>
+      <view class="weui-tab__content1" hidden="{{tabs[activeIndex]['id'] != 1}}">
+        <view class="rich-text-wrp">
+          <view class='page' wx:for="{{event_schedule}}" wx:for-item="item">
+            <!--<view class='yuan2'></view>
+                  <label class='label-class'>{{item.Start_time}}-{{item.End_time}}</label>
+                  <view>{{item.content}}</view>-->
+
+            <rich-text nodes="{{item.content}}" bindtap="tap"></rich-text>
+          </view>
+        </view>
+      </view>
+      <view class="weui-tab__content" hidden="{{tabs[activeIndex]['id'] != 2}}">
+        <view class="rich-text-wrp">
+          <view wx:for="{{guest}}" wx:for-item="item">
+           
+            <rich-text nodes="{{item.Introduction}}" bindtap="tap"></rich-text>
+          </view>
+        </view>
+
+      </view>
+      <view class='bottom-div'>
+        <view bindtap='getFenxiang' class='btn-left'>分享</view>
+        <view class='btn-div' bindtap='baoming' wx:if='{{type==1}}'>我要报名</view>
+        <view class='btn-div' bindtap='qrcode' wx:elif="{{type== 2}}">查看参会二维码</view>
+        <view class='btn-div' wx:elif="{{type== 3}}">活动已结束报名</view>
+        <view class='btn-div' wx:elif="{{type== 4}}">活动未开始报名</view>
+        <view class='btn-div' wx:elif="{{type== 5}}">活动已结束</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view style='width:100%;height:100%;background:rgba(0,0,0,0.7);position:fixed;top:0;left:0;z-index:99999;overflow:scroll;display:flex;align-items:center' wx:if="{{isfx}}" bindtap='setFenxiang'>
+  <!-- <image src='{{ewmurl}}' style='width:60px;height:60px'></image> -->
+  <view class='content-box'>
+  <view hidden='{{ishai}}'>
+  <canvas class='canvas-sty' canvas-id="canvas1"></canvas>
+  </view>
+   <image class='top-img' src='{{imgurl}}' style='width:100%;height:100%;display:block' mode="widthFix"></image>
+
+    <!-- <view class='ewm-bottom'>
+      <view class='content-left pub-flex'>
+        <image src='{{userInfo.avatarUrl}}'></image>
+        <view class='ewm-txt'>请扫描右侧二维码加入本活动</view>
+      </view>
+      <view class='content-right pub-flex'>
+        <image class='ewm-hd' src='{{ewmurl}}' show-menu-by-longpress = "true"></image>
+      </view>
+    </view> -->
+  </view>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="微信授权" confirm-text="" cancel-text="" bindcancel="cancel" bindconfirm="confirm">
+ <button class='tu-button' wx:if='{{canIUse}}' open-type="getUserInfo" bindgetuserinfo="getUserInfo" id='weixin'  bindtap="toasts"> 
+ <image class='tu' src='../../img/weixin.jpg' style='width:30px;height:25px;'></image>微信快捷登录 </button>
+   <block wx:else>
+     <label>请更新微信版本</label>
+    </block>
+</modal>

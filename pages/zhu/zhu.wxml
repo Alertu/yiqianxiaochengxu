@@ -1,0 +1,16 @@
+<view class="bei">
+    <image src="/imgs/zhub.png"></image>
+</view>
+<view class="box"  bindtap='bindActivity_hascv'>
+<image src="/imgs/zhu.png"></image>
+<span >主办方</span>    </view>
+<view class="box1"   >
+    <navigator  class="btn-confirm"  url="../operator-sign-activity/operator-sign-activity?operatorid={{item.id}}&eventid={{itemd.id}}"  hover-class="none">
+<image src="/imgs/zhu1.png"></image>
+<span>签到员工</span>  
+</navigator>
+</view>
+<view class="box1" bindtap="clear" >
+<image src="/imgs/zhu1.png"></image>
+<span>退出登录</span>  
+</view>

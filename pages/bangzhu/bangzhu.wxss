@@ -1,0 +1,4 @@
+/* pages/bangzhu/bangzhu.wxss */
+page{
+  padding: 10px  0 ;
+}

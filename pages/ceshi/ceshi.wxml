@@ -1,0 +1,15 @@
+<button class="bot2" bindtap="showDialogBtn">添加活动</button>
+<!--弹窗-->
+<view class="modal-mask"  bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">添加活动</view>
+    <image src="/imgs/bei.png" style="width:572rpx;height:164rpx;  position: relative;top: -55rpx;z-index:-99999;" ></image>
+  
+     <view class="modal-tou">您可登录易签后台管理发布会议</view>
+    <view class="modal-dizhi">http://admin.51data.com.cn/ </view>
+    <view class="modal-mi">（账号密码同步）</view>
+   <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel" >取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">复制</view> 
+  </view>
+</view>

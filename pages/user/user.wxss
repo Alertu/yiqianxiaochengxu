@@ -1,0 +1,101 @@
+/* pages/user/user.wxss */
+
+page{
+  font-size: 22rpx;
+  background-color: #f3f3f3; 
+  width: 100%; 
+  height: 100%;
+    margin: 0;
+
+}
+.pages{
+  margin-top: -70rpx;
+  background-color: #fff;
+  width: 100%;
+
+}
+.imga{
+  width: 750rpx;
+}
+.info2{
+font-size: 33rpx;
+color: #5979fb;
+position: relative;
+
+
+}
+label{
+  font-size: 36rpx;
+}
+.nev{
+ 
+text-align: center;
+height: 620rpx;
+}
+.user{
+
+height: 300rpx;
+margin-top: -196rpx;
+background-color: #fff;
+}
+
+.box{
+width: 690rpx;
+height: 110rpx;
+line-height: 110rpx;
+border-bottom: 1px solid #f3f3f3;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-left: 30rpx;
+
+}
+.left{
+  color: #000;
+  font-size: 28rpx;
+}
+.left image{
+  width: 46rpx;
+  height: 46rpx;
+  padding-right: 17rpx;
+  position: relative;
+  top: 12rpx;
+}
+.right image{
+width: 14rpx;
+height: 27rpx;
+}
+.box1{
+width: 690rpx;
+height: 110rpx;
+line-height: 110rpx;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-left: 30rpx;
+}
+.zhuti{
+  display: flex;
+}
+.buju{
+  flex: 0 0 33.3333%;
+  margin-top:20rpx; 
+}
+.juzhong{
+  display: flex;
+  justify-content:center;
+}
+.juzhong1{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.xiaotb{
+  width:30px;
+  height:30px;
+  margin: 5rpx 0;
+}
+label{
+  font-size:28rpx;
+}

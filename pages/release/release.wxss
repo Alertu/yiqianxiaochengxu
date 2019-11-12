@@ -1,0 +1,83 @@
+/* pages/release/release.wxss */
+page {
+  width: 100%;
+  heigth:auto;
+  background-color: #f3f3f3; 
+}
+.cen{
+   height: 254rpx;
+}
+.bgimg{
+  width: 750rpx;
+  height: 250rpx;
+}
+.shijian{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.con{
+  width: 750rpx;
+  height: 110rpx;
+  border-bottom: 1px solid #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.con1{
+  width: 50%;
+  height: 110rpx;
+  line-height: 110rpx;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-size: 28rpx;}
+.con2{
+  width: 50%;
+  height: 110rpx;
+  line-height: 110rpx;
+  color: #999;
+  font-size: 28rpx;
+  text-align: center;
+}
+.pages{
+  background-color: #fff;
+  width: 750rpx;
+  height: auto;
+  
+}
+.box{
+  width: 690rpx;
+  height: 91rpx;
+  line-height: 91rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: 1px solid #efefef;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.box1{
+  font-size: 28rpx;
+}
+.weui-input{
+  font-size: 28rpx;
+  color: #666;
+}
+.boxa{
+width: auto;
+height: 50rpx;
+background-color: #a7b7fd;
+color: #fff;
+font-size: 28rpx;
+padding-left: 14rpx;
+padding-right: 14rpx;
+border-radius: 10rpx;
+line-height: 50rpx;
+}
+.box3{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}

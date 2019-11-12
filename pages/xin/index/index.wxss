@@ -1,0 +1,69 @@
+.tou{
+  width: 643rpx;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dao{
+
+  font-size: 30rpx;
+  color: #000;
+}
+.dao image{
+  width: 18rpx;
+  height: 14rpx;
+  padding-left: 10rpx;
+}
+.cen{
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 50rpx
+}
+.cen image{
+  width: 690rpx;
+  height: 300rpx;
+
+}
+.cen text{
+  color: #000;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+
+}
+.tu{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+.con{
+  width: auto;
+  height: 50rpx;
+  background-color: #f3f3f3;
+  line-height: 50rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-radius: 5rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10px;
+
+}
+.con image{
+  width: 22rpx;
+  height: 22rpx;
+
+}
+.con span{
+  font-size: 28rpx;
+  color: #999;
+}
+.bot{
+  width: 750rpx;
+  height: 21rpx;
+  background-color: #f3f3f3;
+  margin-top: 30rpx;
+  margin-left: -29rpx;
+}

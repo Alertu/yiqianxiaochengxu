@@ -1,0 +1,54 @@
+<!--pages/saomao/saoma.wxml-->
+<!--pages/saomao/saoma.wxml-->
+<view class='page'>
+  <view class='weui-cell1 title ' bindtap="kindToggle">
+    <view class='box-sy'></view> 
+   共签到{{signnumber}}人
+  </view>
+  <view >
+    <button class='btn-sm' bindtap='bindsaoma'>我要扫码</button>
+      <view class="table" hidden='{{no_sign_num ==0}}'>
+        <view class="tr bg-w">
+          <view class="th" style='width:20%;'>序号</view>
+          <view class="th" style='width:30%;'>姓名</view>
+          <view class="th" >签到时间</view>
+          <!--<view class="th" >详情</view>-->
+        </view>
+        <block wx:for="{{sign}}">
+          <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+            <view class="td" style='width:20%;'>{{index +1}}</view>
+            <block wx:for='{{item}}' wx:for-item="item2">
+              <block wx:for='{{item2}}' wx:for-item="item3">
+                <view class="td" wx:if='{{index =="name"}}' style='width:30%;'>{{item3}}</view>
+              </block >
+            </block >
+            <block wx:for='{{item}}' wx:for-item="item2">
+              <block wx:for='{{item2}}' wx:for-item="item3">
+                <view class="td" wx:if="{{index =='签到时间'}}">{{item3}}</view>
+              </block >
+            </block >
+          </view>
+          <view class="tr" wx:else>
+            <view class="td" style='width:20%;'>{{index +1}}</view>
+            <block wx:for='{{item}}' wx:for-item="item2">
+              <block wx:for='{{item2}}' wx:for-item="item3">
+                <view class="td" wx:if='{{index =="name"}}' style='width:30%;'>{{item3}}</view>
+              </block >
+            </block >
+            <block wx:for='{{item}}' wx:for-item="item2">
+              <block wx:for='{{item2}}' wx:for-item="item3">
+                <view class="td" wx:if="{{index =='签到时间'}}">{{item3}}</view>
+              </block >
+            </block >
+            <!--<view class="td" bindtap='buttonTap' data-arr='{{item}}' >查看详情</view> -->
+          </view>
+        </block>
+      </view>
+    <!--<view class='div-jp2' wx:for="{{sign}}" wx:for-item='item'  wx;key='index'>
+      <view class=' test' wx:for="{{item}}" wx:for-item='items' >
+       <view style='float:left'> {{items}}</view>
+      </view>
+    </view>-->
+  </view>
+</view>
+

@@ -1,0 +1,164 @@
+<!--pages/activity-check/activity-check.wxml-->
+<view class="page__bd">
+    <view class="weui-tab">
+        <view class="weui-navbar">
+            <block wx:for="{{tabs}}" wx:key="*this">
+                <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                    <view class="weui-navbar__title">{{item}}</view>
+                </view>
+            </block>
+            <view class="weui-navbar__slider" style="width: {{sliderWidth}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            
+        </view>
+        <view class="weui-tab__panel">
+            <view class="weui-tab__content1" hidden="{{activeIndex != 0}}">
+              <view class="table" hidden='{{sign_num ==0}}'>
+                <view class="tr bg-w">
+                  <view class="th" >序号</view>
+                  <view class="th" >姓名</view>
+                  <view class="th" >报名时间</view>
+                  <view class="th" >详情</view>
+                </view>
+                <block wx:for="{{sign}}">
+                  <view class="tr " wx:if="{{index % 2 == 0}}">
+                    <view class="td" >{{index +1}}</view>
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if='{{index =="name"}}'>{{item3}}</view>
+                      </block >
+                    </block >
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if="{{index =='报名时间'}}">{{item3}}</view>
+                      </block >
+                    </block >
+                    
+                    <view class="td" bindtap='buttonTap' data-arr='{{item}}' >查看详情</view>
+                  </view>
+                  <view class="tr bg-g" wx:else>
+                    <view class="td" >{{index +1}}</view>
+                   <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if='{{index =="name"}}'>{{item3}}</view>
+                      </block >
+                    </block >
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if="{{index =='报名时间'}}">{{item3}}</view>
+                      </block >
+                    </block >
+                    <view class="td" bindtap='buttonTap' data-arr='{{item}}' >查看详情</view>
+                  </view>
+                </block>
+              </view>
+            </view>
+
+            <view class="weui-tab__content1" hidden="{{activeIndex != 1}}">
+              <view class="table" hidden='{{sign_in_num ==0}}'>
+                <view class="tr bg-w">
+                  <view class="th" >序号</view>
+                  <view class="th" >姓名</view>
+                  <view class="th" >签到时间</view>
+                  <view class="th" >详情</view>
+                </view>
+                <block wx:for="{{sign_in}}">
+                  <view class="tr " wx:if="{{index % 2 == 0}}">
+                    <view class="td" >{{index +1}}</view>
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if='{{index =="name"}}'>{{item3}}</view>
+                      </block >
+                    </block >
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if="{{index =='签到时间'}}">{{item3}}</view>
+                      </block >
+                    </block >
+                    <view class="td" bindtap='buttonTap' data-arr='{{item}}' >查看详情</view>
+                  </view>
+                  <view class="tr bg-g" wx:else>
+                    <view class="td" >{{index +1}}</view>
+                     <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if='{{index =="name"}}'>{{item3}}</view>
+                      </block >
+                    </block >
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if="{{index =='签到时间'}}">{{item3}}</view>
+                      </block >
+                    </block >
+                    <view class="td" bindtap='buttonTap' data-arr='{{item}}' >查看详情</view>
+                  </view>
+                </block>
+              </view>
+            </view>
+            <view class="weui-tab__content1" hidden="{{activeIndex != 2}}">
+              <view class="table" hidden='{{no_sign_num ==0}}'>
+               <view class="tr bg-w">
+                  <view class="th" >序号</view>
+                  <view class="th" >姓名</view>
+                  <view class="th" >报名时间</view>
+                  <view class="th" >详情</view>
+                </view>
+                <block wx:for="{{no_sign}}">
+                  <view class="tr " wx:if="{{index % 2 == 0}}">
+                    <view class="td" >{{index +1}}</view>
+                     <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if='{{index =="name"}}'>{{item3}}</view>
+                      </block >
+                    </block >
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if="{{index =='报名时间'}}">{{item3}}</view>
+                      </block >
+                    </block >
+                    <view class="td" bindtap='buttonTap' data-arr='{{item}}' >查看详情</view>
+                  </view>
+                  <view class="tr bg-g" wx:else>
+                    <view class="td" >{{index +1}}</view>
+                     <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if='{{index =="name"}}'>{{item3}}</view>
+                      </block >
+                    </block >
+                    <block wx:for='{{item}}' wx:for-item="item2">
+                      <block wx:for='{{item2}}' wx:for-item="item3">
+                        <view class="td" wx:if="{{index =='报名时间'}}">{{item3}}</view>
+                      </block >
+                    </block >
+                    <view class="td" bindtap='buttonTap' data-arr='{{item}}' >查看详情</view>
+                  </view>
+                </block>
+              </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<modal title="嘉宾注册详细信息" hidden="{{modalHidden}}" confirm-text="关闭"  bindconfirm="modalConfirm"  no-cancel="true">
+    <block wx:for="{{information}}">
+      <view wx:for='{{item}}' >
+        <block wx:if="{{index == 'name'}}">
+          <label >姓名</label>:
+          <label>{{item}}</label>
+        </block>
+        <block wx:elif="{{index == 'phone'}}">
+          <label>手机号</label>:
+          <label>{{item}}</label>
+        </block>
+        <block wx:elif="{{index == 'sex'}}">
+          <label >性别</label>:
+          <label wx:if='{{item==0}}'>女</label>
+          <label wx:else>男</label>
+        </block>
+        <block wx:else>
+          <label>{{index}}</label>:
+          <label>{{item}}</label>
+        </block>
+      </view> 
+    </block>
+</modal>
+
+

@@ -1,0 +1,194 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.6",
+	"appid": "wx7c939e136ef11b50",
+	"projectname": "%E6%B4%BB%E5%8A%A8",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 18,
+			"list": [
+				{
+					"id": 0,
+					"name": "测试",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "测试",
+					"pathName": "pages/user/user",
+					"query": "scene=101",
+					"scene": "1048"
+				},
+				{
+					"id": -1,
+					"name": "发布活动",
+					"pathName": "pages/release/release",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "tianjia",
+					"pathName": "pages/informa_gr/informa_gr",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "添加公司",
+					"pathName": "pages/information_gs/information_gs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户报名",
+					"pathName": "pages/select-sign/select-sign",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "主办方",
+					"pathName": "pages/activity-has/activity-has",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动",
+					"pathName": "pages/activity-detail/activity-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动2",
+					"pathName": "pages/activity-detail2/activity-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动详情",
+					"pathName": "pages/activity-detail/activity-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "显示公司信息",
+					"pathName": "pages/xs_information_gs/xs_information_gs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "签到员参加的活动",
+					"pathName": "pages/operator-sign-activity/operator-sign-activity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加签到人员",
+					"pathName": "pages/activity-operator/activity-operator",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "签到员信息",
+					"pathName": "pages/operator-xx/operator-xx",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "签到原信息",
+					"pathName": "pages/operator-look/operator-look",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "弹框",
+					"pathName": "pages/ceshi/ceshi",
+					"scene": null
+				}
+			]
+		}
+	}
+}
